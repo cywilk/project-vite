@@ -1,0 +1,152 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: #FFDDC5;
+}
+.container {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    text-align: 'center';
+}
+.header {
+    font-family: 'Courier New', sans-serif;
+    text-align: 'center';
+}
+#newtask {
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input {
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Courier New', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #FFDDC5;
+}
+#newtask button {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #cf524e;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Courier New', sans-serif;
+}
+#tasks {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span {
+    font-family: 'Courier New', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button {
+    background-color: #cf524e;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 60px;
+    border-radius: 5px;
+    font-family: 'Courier New', sans-serif;
+}
+
+/* Modal Button  rn it's copy pasted */
+.modalContent {
+    cursor: pointer;
+    width: '20rem';
+    height: '20rem';
+    max-width: '20rem';
+    max-height: '20rem';
+    background-color: #cf524e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Courier New', sans-serif;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.modalContent button {
+    color: white;
+    background-color: #cf524e;
+    font-family: 'Courier New', sans-serif;
+    border: none;
+    font-size: 18px;
+}
+
+.modalButton {
+    left: 50%;
+    display: flex;
+    cursor: pointer;
+    background-color: #cf524e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: 'Courier New', sans-serif;
+    border-radius: 5px;
+}
